@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Hey, I am Meet Zaveri',
+    title: 'Alright, I am Meet Zaveri',
     author: 'Meet Zaveri',
     description: 'Portfolio about meet zaveri',
     siteUrl: 'https://gatsby-starter-blog-demo.netlify.com/',
     social: {
       twitter: 'Meet_zaveri',
     },
+    image: `${__dirname}/content/assets/profile-pic.jpg`,
   },
   plugins: [
     {
@@ -31,6 +32,8 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              linkImagesToOriginal: false,
+              quality: 50,
             },
           },
           {
