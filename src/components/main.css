@@ -1,3 +1,6 @@
+body {
+  background-image: -webkit-linear-gradient(150deg, #f2f2f2 59%, #ffd2d9 50%);
+}
 .db {
   display: block;
 }
@@ -23,4 +26,9 @@
   color: #000;
   text-decoration: none;
   box-shadow: none;
+}
+
+a.custom-anchor:hover {
+  text-decoration: none;
+  color: #ffd2d9;
 }

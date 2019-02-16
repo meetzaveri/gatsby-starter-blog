@@ -13,13 +13,14 @@ function Bio(props) {
         return (
           <div className={props.styleClass}>
             <Image
-              fixed={data.avatar.childImageSharp.fixed}
+              fluid={data.avatar.childImageSharp.fluid}
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
                 borderRadius: '100%',
+                minWidth: '200px',
               }}
             />
           </div>
@@ -33,8 +34,8 @@ const CustomHeaderQuery = graphql`
   query CustomHeaderQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 200, height: 200) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 500, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
-
 import { rhythm } from '../utils/typography'
 
 function Bio() {
@@ -16,19 +15,36 @@ function Bio() {
               marginBottom: rhythm(2.5),
             }}
           >
-            <h2> A little bit about me</h2>
+            <h2> A little bit about me ...</h2>
             <div>
-              Frontend Engineer at{' '}
-              <a href="https://gridle.io/" target="_blank">
-                Gridle
-              </a>
-              . Passionate about JavaScript, React Ecosystem, and Web perf.{' '}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Connect with me on Twitter
-              </a>
+              <p>
+                Stranded onto this earth on 16th of August,1996. At present,
+                frontend engineer at{' '}
+                <a href="https://gridle.io/" target="_blank">
+                  Gridle
+                </a>
+                . Holds a <span>Bachelor of Engineering</span> degree in
+                computer science & engineering.
+              </p>
+
+              <p>
+                {' '}
+                Passionate about JavaScript, React Ecosystem, and Web perf.{' '}
+                Always up to experiment new things, taking up new challenges and
+                designing architecture. Hopes to make some impact in this
+                developer community.
+              </p>
+
+              <p>
+                {' '}
+                Want to reach out? Well {` `}
+                <a href={`https://twitter.com/${social.twitter}`}>
+                  connect with me on twitter
+                </a>
+              </p>
             </div>
 
-            <h2>... living in beautiful land of India</h2>
+            <h2>... living in beautiful land of Gujarat,India</h2>
             <div className="d-flex-align">
               <div className="dib">
                 <Image
@@ -42,17 +58,31 @@ function Bio() {
                   }}
                 />
               </div>
-              <div className="dib f-15">📍 Ahmedabad,Gujarat</div>
+              <div className="dib f-15">
+                <i className="dib fas fa-map-pin" /> Ahmedabad
+              </div>
             </div>
 
-            <h2> Favorites and loves to ...</h2>
             <div>
+              <h2> who loves to ...</h2>
               <ul>
                 <li>Build things and OSS lover</li>
-                <li>Competetive programming</li>
-                <li>Write articles</li>
-                <li>Marvel movie(s) buff</li>
+                <li>Engage in competetive programming</li>
+                <li>Write articles about computer science</li>
                 <li>Watch football(Premier League) on weekends</li>
+                <li>Explore unknown roads</li>
+                <li>Refactor old code</li>
+              </ul>
+
+              <h2>interests/likes ...</h2>
+              <ul>
+                <li>Marvel universe, short documentaries</li>
+                <li>South Indian Cuisine, Palak Paneer</li>
+                <li>
+                  Synthwave/Retro/Electronic{' '}
+                  <i className="dib fas fa-music "> </i>{' '}
+                </li>
+                <li>Undefined/null/404</li>
               </ul>
               <div className="db f-15">
                 <a
@@ -60,28 +90,28 @@ function Bio() {
                   href="https://in.linkedin.com/in/meet-zaveri-0839a511a"
                   target="_blank"
                 >
-                  <i className="dib mr1 fa fa-linkedin" />
+                  <i class="dib mr1 fab fa-linkedin" />
                 </a>
                 <a
                   className="custom-anchor "
                   href="https://github.com/meetzaveri"
                   target="_blank"
                 >
-                  <i className="dib mr1 fa fa-github" />
+                  <i className="dib mr1 fab fa-github" />
                 </a>
                 <a
                   className="custom-anchor "
                   href="https://medium.com/@meetzaveri"
                   target="_blank"
                 >
-                  <i className="dib mr1 fa fa-medium" />
+                  <i className="dib mr1 fab fa-medium" />
                 </a>
                 <a
                   className="custom-anchor "
                   href="https://stackoverflow.com/users/7121483/meet-zaveri"
                   target="_blank"
                 >
-                  <i className="dib mr1 fa fa-stack-overflow" />
+                  <i className="dib mr1 fab fa-stack-overflow" />
                 </a>
               </div>
             </div>
